@@ -82,8 +82,8 @@ if ($stmtFiltered) {
 $dataSql = "SELECT
                 co.idOca, -- *** AÑADIR ESTA LÍNEA ***
                 CONCAT(p.codigoProyecto, ' ', p.municipio) AS proyectoDesc, -- Concatenamos para mostrar
-                co.oca,
-                co.montoTotal,
+                co.oca_completa AS oca,
+                co.total_factura as montoTotal,
                 (SELECT SUM(cp.montoParcial) FROM control_pagos cp WHERE cp.idOca = co.idOca) AS montoPagado
             " . $baseSql . $whereSql
             . " ORDER BY " . $orderColumnName . " " . $orderDir
