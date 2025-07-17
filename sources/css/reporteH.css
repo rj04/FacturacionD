@@ -1,0 +1,48 @@
+
+.texto-girado {
+    writing-mode: vertical-rl; /* Cambia el modo de escritura para texto vertical */
+    transform: rotate(180deg); /* Rota el texto 180 grados si es necesario */
+    text-align: center; /* Alinea el texto a la izquierda */
+    height: 310px; /* Ajusta la altura de la celda */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    /*font-size: 11px; /* Ajusta el tamaño de la fuente */
+}
+
+
+
+/* Para ocultar los bordes de enfoque por defecto */
+.btn:focus {
+    outline: none;
+}
+
+table {
+    width: 100%; /* Cambia el ancho según sea necesario (puedes usar px, %, etc.) */
+    margin: 0 auto; /* Centra la tabla */
+    font-size: small;
+    /*table-layout: fixed; /* Fija el ancho de las columnas */
+}
+
+/* Ajustes adicionales para hacer la tabla más compacta */
+th, td {
+    text-align: center;
+    word-wrap: break-word; /* Permite ajustar el contenido si es necesario */
+    padding: 4px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td:first-child {
+    width: 20% !important; /* Forzar el ancho , Ajusta el ancho según tus necesidades */
+    white-space: normal; /* Permite que el texto se ajuste a varias líneas */
+    word-break: break-word; /* Divide las palabras largas en varias líneas */
+    overflow: hidden; /* Evita que el texto desborde si es demasiado largo */
+}
+
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    
+}

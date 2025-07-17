@@ -1,0 +1,240 @@
+body{
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif !important;
+	size: 12px !important;
+}
+
+ header{
+  text-align: center;
+ /**background-color:#CED8F6;**/
+}
+.content-wrapper {
+    padding: 20px;
+    background-color: #f8f9fa; /* Fondo claro para el contenedor */
+}
+
+.table {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+
+th {
+	text-align: center;
+}
+
+/*************MENU************/
+
+.dropdownmenu ul, .dropdownmenu li {
+	margin: 0;
+	padding: 0;
+}
+.dropdownmenu ul {
+	background: gray;
+	list-style: none;
+	width: 100%;
+}
+.dropdownmenu li {
+	float: left;
+	position: relative;
+	width:auto;
+}
+.dropdownmenu a {
+	background: #30A6E6;
+	color: #FFFFFF;
+	display: block;
+	font: bold 12px/20px sans-serif;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+.dropdownmenu li:hover a {
+	background: #000000;
+}
+#submenu {
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 35px;
+	visibility: hidden;
+	z-index: 1;
+}
+li:hover ul#submenu {
+	opacity: 1;
+	top: 40px;	/* adjust this as per top nav padding top & bottom comes */
+	visibility: visible;
+}
+#submenu li {
+	float: none;
+	width: 100%;
+}
+#submenu a:hover {
+	background: #6E6E6E;
+}
+#submenu a {
+	background-color:#000000;
+}
+
+/*******FIN DE MENU*********/
+
+
+table.controlEquipo .estado-daniado {
+    color: #9B230A !important;
+  }
+
+
+/************  PAGINACION *************/
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    border-spacing: 0; /* Elimina cualquier separación de bordes */
+}
+
+.pagination .page-item {
+    margin: 0; /* Elimina el margen entre botones */
+}
+
+.pagination .page-link {
+    padding: 5px 10px;
+    color: #333;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 0; /* Asegúrate de que los bordes no generen separación */
+}
+
+.pagination .page-link:hover {
+    background-color: #f0f0f0;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.pagination .page-item .page-link {
+    border-left-width: 0; /* Elimina el borde izquierdo de los botones excepto el primero */
+}
+
+.pagination .page-item:first-child .page-link {
+    border-left-width: 1px; /* Mantén el borde izquierdo solo en el primer botón */
+}
+
+/*****************FUENTE PARA MOSTRAR RESULTADOS*********************/
+
+.reportesEnca{
+	font-size: 11px;
+}
+
+.reportes{
+	font-size: 10px;
+}
+
+.cuerpoR{
+	font-size: 8px;
+}
+
+.listado{
+	font-size: 11px;
+}
+
+/***************** FUENTE PARA MOSTRAR RESULTADOS EN BUSQUEDA *********************/
+
+.buscarEnca{
+	font-size: 12px;
+    text-align: center;
+}
+
+.buscar{
+	font-size: 10px;
+}
+
+.cuerpoB{
+	font-size: 11px;
+}
+
+.listadoB{
+	font-size: 11px;
+}
+
+
+/***************** FUENTE PARA FORMULARIOS *********************/
+
+.cuerpoForm{
+    font-size: 12px;
+}
+
+
+/************DRAG AND DROP************/
+
+
+.drop-area {
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .drop-area.dragover {
+    background-color: #f0f0f0;
+    border-color: #000;
+  }
+
+  .drop-area p {
+    margin: 0;
+    font-size: 18px;
+    color: #666;
+  }
+
+
+
+  hr {
+    border: 2;
+    height: 2px;
+    background: #fff;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+.form-container {
+    background-color: #f8f9fa; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    border: 1px solid #ddd; /* Borde sutil */
+}
+
+/* Asegura que la tabla no se corte */
+table.dataTable {
+    width: 100% !important;
+}
+
+.dataTables_wrapper {
+    overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+    table.dataTable {
+        font-size: 12px;
+    }
+}
+
+#herramientasTable {
+    width: 100%;              /* Asegura que la tabla ocupe todo el ancho disponible */
+    table-layout: fixed;      /* Hace que todas las celdas tengan el mismo tamaño */
+    overflow: hidden;         /* Evita el desbordamiento horizontal */
+    font-size: 0.875rem;      /* Ajusta el tamaño de la fuente */
+}

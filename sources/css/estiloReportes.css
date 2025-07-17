@@ -1,0 +1,33 @@
+.button-container {
+    display: flex;
+    gap: 20px;
+}
+
+.report-btn {
+    background-color: #4CAF50; /* Color de fondo */
+    color: white;  /* Color del texto */
+    border: none;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.report-btn:hover {
+    background-color: #45a049;
+}
+
+.icono {
+    width: 30px;
+    height: 30px;
+}
+
+.report-btn img {
+    max-width: 100%;
+    height: auto;
+}
